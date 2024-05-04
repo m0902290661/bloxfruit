@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blox fruit</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .button{
+            text-decoration: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            height: 50px;
+            width: 200px;
+        }
+        .button:hover{
+            background-color: blue;
+            color: white;
+        }
+        .d21{
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d0">
+        <h1>blox fruit 中文</h1>
+        <hr>
+    </div>
+    <div class="d1">
+        <img src="下載.jpeg" >
+    </div>
+    <div class="d2">
+        <h2>加入</h2>
+        <button class="button" onclick="show()">了解</button>
+    </div>
+    <div class="d21" id="d21">
+        <h2>加入blox fruit 中文</h2>
+        <p>這是一個研討blox fruit玩法的群組，成員皆是熱衷於blox fruit的玩家</p>
+        <button class="button" onclick="not()">聲請加入</button>
+        <p>感謝聲請</p>
+        <p id="out"></p>
+    </div>
+    <div class="d3">
+        <h2>私人伺服器資訊</h2>
+        <h3>2024/5月份</h3>
+        <li>cread:</li>
+        <li>member:</li>
+    </div>
+
+    <script>
+        function show(){
+            document.getElementById('d21').style.display='block';
+        }
+        function nshow(){
+            document.getElementById('d21').style.display='none';
+        }
+        window.onload=function(){
+            nshow();
+        };
+        function not(){
+            document.getElementById('out').innerHTML='mistake code:404?!';
+        }
+    </script>
+</body>
+</html>
